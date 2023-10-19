@@ -1,7 +1,8 @@
 const firstBiscuit = document.querySelector('#firstBiscuit')
+const button = document.querySelector('#button')
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
-console.log(screen1)
+
 function first() {
     if(screen2.classList.contains('hide')) {
         setTimeout(() => {
@@ -19,4 +20,4 @@ function reset () {
 }
 
 firstBiscuit.addEventListener('mouseover', first)
-addEventListener('click', reset)
+button.addEventListener('click', reset)
